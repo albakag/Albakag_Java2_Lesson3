@@ -6,7 +6,7 @@ public class PhoneBook {
     Map<String, ArrayList<Long>> addressBook = new HashMap<>();
 
     //Метод вставки нового абонента в телефонную книгу
-    protected void add(String nameKey, long phoneNumber){
+    protected void add(String nameKey, long phoneNumber) {
 
         ArrayList<Long> list = addressBook.get(nameKey);
         if (list == null) {
@@ -25,7 +25,7 @@ public class PhoneBook {
 
     //Вывод всей информации о каждом абоненте в телефонной книге
     protected void getUsersAll() {
-        for (Map.Entry<String, ArrayList<Long>> tmp: addressBook.entrySet()) {
+        for (Map.Entry<String, ArrayList<Long>> tmp : addressBook.entrySet()) {
             System.out.println("Пользователь - " + tmp.getKey() + ", телефон - " + tmp.getValue());
         }
     }
