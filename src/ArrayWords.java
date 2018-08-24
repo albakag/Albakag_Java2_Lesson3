@@ -4,8 +4,9 @@ import java.util.*;
 public class ArrayWords {
 
     //Создаем массив слов, с разной частотой повторения
-    private static String [] words = {"Тумба","Кровать","Диван","Табурет","Стул","Диван","Кресло","Кровать","Скамейка","Шкаф","Стул","Гардина","Табуерт","Шкаф","Стул",
-            "Кровать","Стол","Плита","Холодильник","Тумба"};
+    private static String[] words = {"Тумба", "Кровать", "Диван", "Табурет", "Стул", "Диван", "Кресло",
+            "Кровать", "Скамейка", "Шкаф", "Стул", "Гардина", "Табуерт", "Шкаф", "Стул", "Кровать",
+            "Стол", "Плита", "Холодильник", "Тумба"};
 
     public static String[] getWords() {
         return words;
@@ -17,7 +18,7 @@ public class ArrayWords {
     Map<String, Integer> mapNames = new HashMap<>();
 
     //Метод выводит уникальные слова(только), и слова массива с частотой повторений
-    protected void showNames (String [] names) {
+    protected void showNames(String[] names) {
 
         for (int i = 0; i < names.length; i++) {
             int counter = 0;
